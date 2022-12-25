@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/1 work/css/styl.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header class="header">
+        <div><a href="../contact.html">Logo</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a class="link " href="../index.html">Home</a></li>
+                <li><a class="link active" href="./contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <form class="form-search">
+            <input type="search" name="search" placeholder="Введите поисковый запрос ..." class="form-search__search">
+
+            <input type="image" src="../images/imputTip.png">
+        </form>
+    </header>
+
+    <div class="container">
+        <form class="form-contact">
+            <h1 class="mb-2 text-center">Fill out the form</h1>
+            <div class="form-contact_data mb-2">
+                <input type="text" name="User_name" placeholder="Ваше имя..." required id="user_name">
+                <br>
+                <input type="number" name="User_age" placeholder="Ваш возраст ..." id="user_age" min="10" max="100">
+                <br>
+                <input type="email" name="User_email" placeholder="Ваш email ..." required id="user_email">
+                <br>
+                <input type="password" name="User_password" placeholder="Ваш пароль ..." required id="user_password">
+            </div>
+
+            <div class="mb-2">
+                <label for="">Ваш любимый цвет:</label>
+                <input type="color" name="color">
+            </div>
+
+            <div class="mb-2">
+                <label for="">Когда начинается ваш отпуск ?</label>
+                <input type="date" name="vacation">
+            </div>
+
+            <div class="mb-2">
+                <label for="">Фото вашего любимого курорта:</label>
+                <input type="file" name="photo_place">
+            </div>
+
+            <div class="mb-2">
+                <b>Ваша любимая марка автомобиля ?</b>
+                <br>
+                <label for="bugatti">Bugatti</label>
+                <input type="checkbox" name="Car_brand" value="bugatti" id="bugatti">
+                <br>
+                <label for="lamborghini">Lamborghini</label>
+                <input type="checkbox" name="Car_brand" value="lamborghini" id="lamborghini">
+                <br>
+                <label for="ferrari">Ferrari</label>
+                <input type="checkbox" name="Car_brand" value="ferrari" id="ferrari">
+            </div>
+
+            <div class="mb-2">
+                <b> Выберите родио станцию :</b>
+                <br>
+                <label for="energe">Radio-Energe</label>
+                <input type="radio" name="radio-station" value="energe" id="energe" checked>
+                </br>
+                <label for="detskoe">Detskoe-Radio</label>
+                <input type="radio" name="radio-station" value="detskoe" id="" detskoe>
+                <br>
+                <label for="retro">Retro.FM</label>
+                <input type="radio" name="radio-station" value="retro" id="retro">
+            </div>
+
+            <div class="mb-2">
+                <textarea name="user_about" placeholder="Напишите о себе" class="form-contact_about"></textarea>
+            </div>
+
+            <div class="mb-2">
+                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-success">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Copying is prohibited</p>
+    </footer>
+</body>
+
+</html>
