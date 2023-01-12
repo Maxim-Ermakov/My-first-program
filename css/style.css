@@ -96,6 +96,10 @@ input[required]::placeholder {
     color: orange;
 }
 
+.logo{
+    width: 120px;
+}
+
 .header {
     position: fixed;
     top: 0;
